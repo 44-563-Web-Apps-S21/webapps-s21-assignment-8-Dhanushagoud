@@ -25,7 +25,6 @@ const server =
           // Process the queries here
           res.statusCode = 200      //code for OK
           res.setHeader('Content-Type', 'text/plain') 
-          res.write("last digit of 919 number is '5' \n")
           res.write(`floor(${x},${Number}) is ${Math.floor(x,Number)}\n`)
          res.end();
         
