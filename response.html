@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Response Html</title>
+    <title>Response </title>
 </head>
 <body>
-    <div class="Introduction">
-        <h1>Advices</h1>
-        <h4>To GetAdvice click on the button</h4>
+    <div class="">
+        <h1>Jokes</h1>
+        <h4>for jokes click on the button</h4>
         <div>
-            <button onclick="getAdvice()">Get Advice</button>
+            <button onclick="getjokes()">Get jokes</button>
         </div>
     </div>
 
-    <div id="Advice"></div>
+    <div id="jokes"></div>
     <script>
-        const getAdvice = () => {
+        const getjokes = () => {
             fetch('http://127.0.0.1:3001').then(
                 (res) => {
                     console.log(res)
@@ -23,9 +23,9 @@
             ).then(data => {
             
                 console.log(data)
-                document.getElementById("Advice").innerHTML = data
+                document.getElementById("jokes").innerHTML = data
             }).catch(err => {
-                document.getElementById("Advice").innerHTML = err
+                document.getElementById("jokes").innerHTML = err
             })
         }
     </script>
