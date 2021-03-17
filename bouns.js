@@ -15,11 +15,8 @@ const server =
             if (req.method === 'GET') {
 
                 //   console.log("Look for query parameter data: " + search_params.get("data"))
-                const jokes = ["why  did the nurse need pen at work"
-                                  "incase she need to draw a blood."
-
-                                " what kind of music do plantes like"
-                                  "Neptunes.",
+                const jokes = ["why  did the nurse need pen at work incase she need to draw a blood.",
+                 "what kind of music do plantes like,Neptunes.",
                 "dont break anybodys heart,they have only one. Break their bones,they have 206.",
                 "people say nothing is impossible, but i do nothing everyday.",
                 " marry a person, you should first make them use a computer with slow Internet to see who they really are.",
